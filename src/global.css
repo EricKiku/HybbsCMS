@@ -1,0 +1,86 @@
+.green {
+    color: var(--import) !important;
+}
+
+* {
+    font-family: "黑体" !important;
+    font-size: 16px;
+}
+
+body {
+    --first: #2B2D31;
+    --second: #34363C;
+    --import: #23A559;
+    --import_less: #60f59e;
+    --import_more: #ffaa50;
+    --import_more_dark: #c4823c;
+    --elementui_bg:#409EFF;
+    --elementui_bg_hover:#88c3fd;
+}
+
+
+.mask {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 修改滚动条样式 */
+.scrollbar::-webkit-scrollbar {
+    width: 7px;
+    height: 1px;
+    /**/
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background: rgb(239, 239, 239);
+    border-radius: 2px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background: #bfbfbf;
+    border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #333;
+}
+
+.scrollbar::-webkit-scrollbar-corner {
+    background: #179a16;
+}
+
+
+/* 数据分析的各模块的基本样式 */
+.analysisData {
+    box-sizing: border-box;
+    background-color: white;
+    height: 100%;
+    padding: 30px;
+}
+
+.analysisData .title {
+    height: 20px;
+    width: auto;
+    line-height: 20px;
+    font-size: 18px;
+    font-family: "黑体";
+    position: absolute;
+    font-weight: bold;
+    z-index: 1;
+
+
+}
+
+.analysisData .title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    background-color: var(--import_less);
+    bottom: 0px;
+    z-index: -1;
+}
